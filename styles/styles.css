@@ -74,3 +74,27 @@ img {
   line-height: 21px;
   text-align: center;
 }
+
+.advantages-item-wide {
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.advantages-item-top:nth-child(even),
+.advantages-item-bottom:nth-child(odd) {
+  color: #000000;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-top:nth-child(3) {
+  color: #000000;
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.subscribe-index {
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("../images/index/subscribe.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
