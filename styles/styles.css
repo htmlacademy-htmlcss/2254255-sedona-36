@@ -78,7 +78,7 @@ img {
   margin-left: 30px;
 }
 
-.navigation-list {
+.navigation-user {
   max-width: 320px;
   margin-left: auto;
 }
@@ -185,12 +185,26 @@ img {
   background-color: #ffffff;
 }
 
+.search {
+  padding: 96px 304px;
+}
+
+.subscribe {
+  padding: 96px 258px 104px;
+}
+
 .subscribe-index {
   color: #ffffff;
   background-color: #000000;
   background-image: url("../images/index/subscribe.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 70px 30px;
 }
 
 .footer-link {
