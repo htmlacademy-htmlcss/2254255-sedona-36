@@ -92,6 +92,29 @@ img {
   text-decoration: none;
 }
 
+.hero {
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("../images/index/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 485px;
+}
+
+.hero-welcome {
+  display: block;
+  margin: 0 auto;
+  padding-top: 51px;
+}
+
+.divider {
+  background-image: url("../images/index/divider.svg");
+  background-repeat: no-repeat;
+  height: 57px;
+  margin-top: 25px;
+}
+
 .lead {
   font-size: 30px;
   line-height: 36px;
