@@ -66,6 +66,23 @@ img {
   overflow: hidden;
 }
 
+.navigation {
+  display: flex;
+  padding: 0 70px;
+}
+
+.navigation-list {
+  width: 440px;
+  margin: 0;
+  padding: 0;
+  margin-left: 30px;
+}
+
+.navigation-list {
+  max-width: 320px;
+  margin-left: auto;
+}
+
 .navigation-link {
   font-size: 20px;
   line-height: 24px;
