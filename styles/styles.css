@@ -108,13 +108,13 @@ img {
   display: block;
   margin: 0 auto;
   padding-top: 51px;
+  margin-bottom: 25px;
 }
 
 .divider {
   background-image: url("../images/index/divider.svg");
   background-repeat: no-repeat;
   height: 57px;
-  margin-top: 25px;
 }
 
 .advantages-list {
