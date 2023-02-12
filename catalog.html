@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
   </head>
 
   <body>
@@ -43,11 +44,11 @@
         </nav>
       </header>
 
-      <main class="main-catalog" data-test="main">
+      <main class="main" data-test="main">
         <div class="catalog-container">
           <header class="catalog-header">
             <h1 class="catalog-title">Гостиницы Седоны</h1>
-            <ul class="breadcrumbs-list">
+            <ul class="nobullet breadcrumbs-list">
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
                   <span class="visually-hidden">Главная</span>
@@ -64,7 +65,7 @@
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
-                <ul class="catalog-filter-list">
+                <ul class="nobullet catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input class="control-input" type="checkbox" name="swimming-pool" checked>Бассейн
@@ -85,7 +86,7 @@
 
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Тип Жилья:</legend>
-                <ul class="catalog-filter-list">
+                <ul class="nobullet catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input class="control-input" type="radio" name="hotel" checked>Гостиница
@@ -104,7 +105,7 @@
                 </ul>
               </fieldset>
 
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group catalog-filter-price">
                 <legend class="catalog-filter-title">Стоимость, &#8381:</legend>
               </fieldset>
 
@@ -141,47 +142,43 @@
 
           <ul class="nobullet hotel-list">
             <li class="hotel-card">
-              <a class="hotel-card-link" href="#">
-                <img class="hotel-card-image" src="images/catalog/hotel-1.jpg" width="300" height="212" alt="Грот на фоне звёздного неба">
-                <h3 class="lead lead-hotel">Amara Resort & Spa</h3>
-                <p class="advantages-description">Гостиница</p>
-                <p class="advantages-description">От 4000 &#8381</p>
-              </a>
+              <img class="hotel-card-image" src="images/catalog/hotel-1.jpg" width="300" height="212" alt="Грот на фоне звёздного неба">
+              <h3 class="lead-hotel">Amara Resort & Spa</h3>
+              <p class="hotel-description">Гостиница</p>
+              <p class="hotel-description hotel-price">От 4000 &#8381</p>
               <a class="button" href="#">Подробнее</a>
               <button class="button button-blue" type="button">В Избранное</button>
+              <div class="hotel-stars"></div>
               <p class="rating">Рейтинг: 8,5</p>
             </li>
             <li class="hotel-card">
-              <a class="hotel-card-link" href="#">
-                <img class="hotel-card-image" src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Лес, горы и радуга на облачном небе">
-                <h3 class="lead lead-hotel">Villas at Poco Diablo</h3>
-                <p class="advantages-description">Гостиница</p>
-                <p class="advantages-description">От 5000 &#8381</p>
-              </a>
+              <img class="hotel-card-image" src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Лес, горы и радуга на облачном небе">
+              <h3 class="lead-hotel">Villas at Poco Diablo</h3>
+              <p class="hotel-description">Гостиница</p>
+              <p class="hotel-description hotel-price">От 5000 &#8381</p>
               <a class="button" href="#">Подробнее</a>
               <button class="button button-checked" type="button">В Избранном</button>
+              <div class="hotel-stars"></div>
               <p class="rating">Рейтинг: 9,2</p>
             </li>
             <li class="hotel-card">
-              <a class="hotel-card-link" href="#">
-                <img class="hotel-card-image" src="images/catalog/hotel-3.jpg" width="300" height="212" alt="Лес, горы на фоне голубого неба">
-                <h3 class="lead lead-hotel">Desert Quail Inn</h3>
-                <p class="advantages-description">Гостиница</p>
-                <p class="advantages-description">От 2500 &#8381</p>
-              </a>
+              <img class="hotel-card-image" src="images/catalog/hotel-3.jpg" width="300" height="212" alt="Лес, горы на фоне голубого неба">
+              <h3 class="lead-hotel">Desert Quail Inn</h3>
+              <p class="hotel-description">Гостиница</p>
+              <p class="hotel-description hotel-price">От 2500 &#8381</p>
               <a class="button" href="#">Подробнее</a>
               <button class="button button-blue" type="button">В Избранное</button>
+              <div class="hotel-stars"></div>
               <p class="rating">Рейтинг: 9,2</p>
             </li>
             <li class="hotel-card">
-              <a class="hotel-card-link" href="#">
-                <img class="hotel-card-image" src="images/catalog/hotel-4.jpg" width="300" height="212" alt="Горы на фоне звёздного неба">
-                <h3 class="lead lead-hotel">GreenTree Inn</h3>
-                <p class="advantages-description">Гостиница</p>
-                <p class="advantages-description">От 1500 &#8381</p>
-              </a>
+              <img class="hotel-card-image" src="images/catalog/hotel-4.jpg" width="300" height="212" alt="Горы на фоне звёздного неба">
+              <h3 class="lead-hotel">GreenTree Inn</h3>
+              <p class="hotel-description">Гостиница</p>
+              <p class="hotel-description hotel-price">От 1500 &#8381</p>
               <a class="button" href="#">Подробнее</a>
               <button class="button button-blue" type="button">В Избранное</button>
+              <div class="hotel-stars"></div>
               <p class="rating">Рейтинг: 5,0</p>
             </li>
           </ul>
@@ -222,7 +219,7 @@
       </main>
 
       <footer class="page-footer" data-test="footer">
-        <section class="footer-social">
+        <section class="footer">
           <h2 class="visually-hidden">Соцсети</h2>
           <ul class="nobullet footer-list">
             <li class="footer-item">
@@ -246,7 +243,7 @@
         <a class="footer-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
 
         <a class="footer-link" href="https://htmlacademy.ru/">
-          <svg class="htmlacademy-logo" src="images/footer/html-academy.svg" width="115" height="33" alt="Логотип разработчика">
+          <img class="htmlacademy-logo" src="images/footer/html-academy.svg" width="115" height="33" alt="Логотип разработчика">
         </a>
       </footer>
     </div>
