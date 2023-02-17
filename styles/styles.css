@@ -100,7 +100,7 @@ img {
   text-decoration: none;
 }
 
-.navigation-user .navigation-link {
+.navigation-user-link {
   min-width: 44px;
   min-height: 64px;
 }
@@ -140,7 +140,7 @@ img {
   margin-bottom: 20px;
 }
 
-.advantages-container .lead {
+.advantages-lead {
   margin-bottom: 25px;
 }
 
