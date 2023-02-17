@@ -74,6 +74,8 @@ img {
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   width: 440px;
   margin: 0;
   padding: 0;
@@ -81,11 +83,15 @@ img {
 }
 
 .navigation-user {
+  justify-content: flex-end;
   max-width: 320px;
   margin-left: auto;
 }
 
 .navigation-link {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px 16px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -94,20 +100,23 @@ img {
   text-decoration: none;
 }
 
+.navigation-user-link {
+  min-width: 44px;
+  min-height: 64px;
+}
+
 .hero {
   color: #ffffff;
   background-color: #000000;
   background-image: url("../images/index/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  width: 1200px;
-  height: 485px;
+  padding-top: 51px;
 }
 
 .hero-welcome {
   display: block;
   margin: 0 auto;
-  padding-top: 51px;
   margin-bottom: 25px;
 }
 
@@ -117,11 +126,8 @@ img {
   height: 57px;
 }
 
-.advantages-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
+.advantages-container {
+  margin: 69px 0;
 }
 
 .lead {
@@ -130,10 +136,18 @@ img {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.advantages-lead {
+  margin-bottom: 25px;
 }
 
 .description {
   text-align: center;
+  margin: 0;
+  margin-bottom: 54px;
 }
 
 .button {
@@ -148,6 +162,7 @@ img {
   border: none;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 8px 0;
 }
 
 .button-blue {
@@ -179,32 +194,53 @@ img {
   text-align: center;
 }
 
-.advantages-item {
-  color: #000000;
-  background-color: rgba(131, 179, 211, 0.12);
-  width: 230px;
-  height: 385px;
-  padding: 0 85px;
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
-.advantages-item-image {
-  width: 800px;
-  padding: 0;
+.advantages-item {
+  display: flex;
+  width: 400px;
+  height: 385px;
 }
 
 .advantages-item-wide {
   color: #ffffff;
   background-color: #82B3D3;
+  width: 1200px;
 }
 
-.advantages-item-dark {
+.advantages-item-container {
+  padding: 0 85px;
+  align-self: center;
+}
+
+.advantages-item-medium {
   color: #000000;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-item-light {
   color: #000000;
-  background-color: #ffffff;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.service-container {
+  margin: 64px 0;
+}
+
+.breadcrumbs-list {
+  display: flex;
+  gap: 28px;
+}
+
+.breadcrumbs-link {
+  display: block;
+  min-width: 13px;
+  min-height: 15px;
 }
 
 .catalog-container {
@@ -239,6 +275,13 @@ img {
   margin-left: auto;
 }
 
+.catalog-filter-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 56px;
+}
+
 .catalog {
   padding: 50px 70px 60px;
 }
@@ -258,8 +301,15 @@ img {
 }
 
 .select-view {
+  display: block;
+  width: 48px;
+  height: 48px;
   color: inherit;
   text-decoration: none;
+}
+
+.select-container {
+  display: flex;
 }
 
 .hotel-list {
@@ -329,9 +379,12 @@ img {
 }
 
 .pagination-link {
+  display: block;
+  width: 60px;
+  height: 60px;
   font-family: inherit;
   font-size: 20px;
-  line-height: 36px;
+  line-height: 60px;
   font-weight: 700;
   text-align: center;
   color: #ffffff;
@@ -341,17 +394,26 @@ img {
   text-decoration: none;
 }
 
+.pagination-empty {
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+}
+
 .pagination-current {
   color: #000000;
   background-color: #f2f2f2;
 }
 
 .search {
-  padding: 96px 304px;
+  margin: 96px 0;
+  text-align: center;
 }
 
 .subscribe {
-  padding: 96px 258px 104px;
+  padding: 96px 0 104px;
+  text-align: center;
 }
 
 .subscribe-index {
@@ -365,6 +427,7 @@ img {
 .page-footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 40px 70px 30px;
 }
 
@@ -374,4 +437,15 @@ img {
   text-align: center;
   color: inherit;
   text-decoration: none;
+}
+
+.footer-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 145px;
+}
+
+.footer-item {
+  width: 48px;
+  height: 40px;
 }

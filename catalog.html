@@ -11,8 +11,8 @@
     <div class="body-container">
       <header class="page-header" data-test="header">
         <nav class="navigation">
-          <a class="navigation-link" href="index.html">
-            <img class="logo-image" src="images/header/logo.svg" width="138" height="64" alt="Логотип город Седона">
+          <a class="navigation-logo" href="index.html">
+            <img class="logo-image" src="images/header/logo.svg" width="138" height="64" alt="Логотип город Седона.">
           </a>
           <ul class="nobullet navigation-list">
             <li class="navigation-item">
@@ -109,8 +109,10 @@
                 <legend class="catalog-filter-title">Стоимость, &#8381:</legend>
               </fieldset>
 
-              <button class="button button-blue" type="submit">Применить</button>
-              <button class="button button-transparent" type="reset">Сбросить</button>
+              <div class="catalog-filter-buttons">
+                <button class="button button-blue" type="submit">Применить</button>
+                <button class="button button-transparent" type="reset">Сбросить</button>
+              </div>
             </form>
           </section>
         </div>
@@ -129,20 +131,22 @@
               <option value="rating">Сначала с высоким рейтингом</option>
             </select>
 
-            <a class="select-view" href="#">
-              <span class="visually-hidden">Показать плиткой</span>
-            </a>
-            <a class="select-view" href="#">
-              <span class="visually-hidden">Показать списком</span>
-            </a>
-            <a class="select-view" href="#">
-              <span class="visually-hidden">Показать таблицей</span>
-            </a>
+            <div class="select-container">
+              <a class="select-view" href="#">
+                <span class="visually-hidden">Показать плиткой</span>
+              </a>
+              <a class="select-view" href="#">
+                <span class="visually-hidden">Показать списком</span>
+              </a>
+              <a class="select-view" href="#">
+                <span class="visually-hidden">Показать таблицей</span>
+              </a>
+            </div>
           </section>
 
           <ul class="nobullet hotel-list">
             <li class="hotel-card">
-              <img class="hotel-card-image" src="images/catalog/hotel-1.jpg" width="300" height="212" alt="Грот на фоне звёздного неба">
+              <img class="hotel-card-image" src="images/catalog/hotel-1.jpg" width="300" height="212" alt="Грот на фоне звёздного неба.">
               <h3 class="lead-hotel">Amara Resort & Spa</h3>
               <p class="hotel-description">Гостиница</p>
               <p class="hotel-description hotel-price">От 4000 &#8381</p>
@@ -152,7 +156,7 @@
               <p class="rating">Рейтинг: 8,5</p>
             </li>
             <li class="hotel-card">
-              <img class="hotel-card-image" src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Лес, горы и радуга на облачном небе">
+              <img class="hotel-card-image" src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Лес, горы и радуга на облачном небе.">
               <h3 class="lead-hotel">Villas at Poco Diablo</h3>
               <p class="hotel-description">Гостиница</p>
               <p class="hotel-description hotel-price">От 5000 &#8381</p>
@@ -162,7 +166,7 @@
               <p class="rating">Рейтинг: 9,2</p>
             </li>
             <li class="hotel-card">
-              <img class="hotel-card-image" src="images/catalog/hotel-3.jpg" width="300" height="212" alt="Лес, горы на фоне голубого неба">
+              <img class="hotel-card-image" src="images/catalog/hotel-3.jpg" width="300" height="212" alt="Лес, горы на фоне голубого неба.">
               <h3 class="lead-hotel">Desert Quail Inn</h3>
               <p class="hotel-description">Гостиница</p>
               <p class="hotel-description hotel-price">От 2500 &#8381</p>
@@ -172,7 +176,7 @@
               <p class="rating">Рейтинг: 9,2</p>
             </li>
             <li class="hotel-card">
-              <img class="hotel-card-image" src="images/catalog/hotel-4.jpg" width="300" height="212" alt="Горы на фоне звёздного неба">
+              <img class="hotel-card-image" src="images/catalog/hotel-4.jpg" width="300" height="212" alt="Горы на фоне звёздного неба.">
               <h3 class="lead-hotel">GreenTree Inn</h3>
               <p class="hotel-description">Гостиница</p>
               <p class="hotel-description hotel-price">От 1500 &#8381</p>
@@ -209,7 +213,7 @@
 
         <section class="subscribe" data-test="subscribe">
           <h2 class="lead">Подпишитесь на рассылку</h2>
-          <p class="description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
 
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="subscribe-field" placeholder="Ваш e-mail" type="email" name="subscribe-email">
@@ -243,7 +247,7 @@
         <a class="footer-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
 
         <a class="footer-link" href="https://htmlacademy.ru/">
-          <img class="htmlacademy-logo" src="images/footer/html-academy.svg" width="115" height="33" alt="Логотип разработчика">
+          <img class="htmlacademy-logo" src="images/footer/html-academy.svg" width="115" height="33" alt="Логотип разработчика.">
         </a>
       </footer>
     </div>
