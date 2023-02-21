@@ -330,10 +330,12 @@ img {
 
 .hotel-card-image {
   grid-column: 1 / -1;
+  object-fit: contain;
 }
 
 .lead-hotel {
   grid-column: 1 / -1;
+  width: min-content;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -341,6 +343,7 @@ img {
 }
 
 .hotel-description {
+  width: min-content;
   font-size: 18px;
   line-height: 21px;
   margin: 0;
