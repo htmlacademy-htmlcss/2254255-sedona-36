@@ -321,9 +321,10 @@ img {
 
 .hotel-card {
   display: grid;
-  grid-template-columns: repeat(2, 140px);
+  grid-template-columns: repeat(2, 1fr);
   padding: 20px;
-  gap: 16px;
+  column-gap: 16px;
+  row-gap: 20px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
 }
