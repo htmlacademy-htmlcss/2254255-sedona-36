@@ -444,6 +444,11 @@ img {
   text-decoration: none;
 }
 
+.footer-social-link {
+  width: 48px;
+  height: 40px;
+}
+
 .footer-list {
   display: flex;
   flex-wrap: wrap;
@@ -451,6 +456,11 @@ img {
 }
 
 .footer-item {
-  width: 48px;
-  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-logo {
+  vertical-align: middle;
 }
