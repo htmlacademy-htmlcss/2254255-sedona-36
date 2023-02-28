@@ -202,6 +202,10 @@ img {
   padding: 8px 34px;
 }
 
+.button-search {
+  padding: 8px 50px;
+}
+
 .button-blue {
   color: #ffffff;
   background-color: #82b3d3;
@@ -293,6 +297,13 @@ img {
 .advantages-title-service {
   margin-top: 102px;
   margin-bottom: 30px;
+}
+
+.service-icon {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 162.5px;
 }
 
 .breadcrumbs-list {
