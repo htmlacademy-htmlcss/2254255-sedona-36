@@ -209,6 +209,8 @@ img {
 }
 
 .advantages-title {
+  position: relative;
+  display: block;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -216,10 +218,27 @@ img {
   text-transform: uppercase;
 }
 
+.advantages-title-underlined {
+  max-width: 180px;
+  margin: auto;
+  margin-bottom: 62px;
+}
+
+.advantages-title-underlined::after {
+  content: "";
+  position: absolute;
+  top: 86px;
+  left: 60px;
+  width: 60px;
+  border-bottom: 2px solid currentColor;
+  opacity: 0.3;
+}
+
 .advantages-description {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  margin: 0;
 }
 
 .advantages-list {
