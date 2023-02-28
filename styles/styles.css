@@ -437,6 +437,9 @@ img {
 }
 
 .footer-link {
+  position: relative;
+  display: block;
+  height: 50px;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
@@ -446,7 +449,16 @@ img {
 
 .footer-social-link {
   width: 48px;
-  height: 40px;
+}
+
+.footer-logo-link {
+  width: 115px;
+}
+
+.footer-phone-link {
+  box-sizing: border-box;
+  width: 350px;
+  padding: 5px 0;
 }
 
 .footer-list {
@@ -455,12 +467,12 @@ img {
   max-width: 145px;
 }
 
-.footer-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
+.footer-social-icon,
 .footer-logo {
-  vertical-align: middle;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
