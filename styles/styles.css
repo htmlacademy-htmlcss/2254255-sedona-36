@@ -113,6 +113,20 @@ img {
   z-index: 1;
 }
 
+.likes-count {
+  position: absolute;
+  left: 20px;
+  top: 11px;
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  background-color: #7db54f;
+  border-radius: 10px;
+  padding: 5px;
+}
+
 .hero {
   color: #ffffff;
   background-color: #000000;
@@ -171,6 +185,12 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   padding: 8px 0;
+}
+
+.button-header {
+  margin-top: 14px;
+  margin-left: 20px;
+  padding: 8px 34px;
 }
 
 .button-blue {
