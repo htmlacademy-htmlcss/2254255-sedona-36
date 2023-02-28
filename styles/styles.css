@@ -113,6 +113,15 @@ img {
   z-index: 1;
 }
 
+.icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
 .likes-count {
   position: absolute;
   left: 20px;
@@ -261,6 +270,8 @@ img {
 }
 
 .advantages-item-container {
+  position: relative;
+  display: block;
   padding: 0 85px;
   align-self: center;
 }
@@ -277,6 +288,11 @@ img {
 
 .service-container {
   margin: 64px 0;
+}
+
+.advantages-title-service {
+  margin-top: 102px;
+  margin-bottom: 30px;
 }
 
 .breadcrumbs-list {
@@ -512,15 +528,4 @@ img {
   display: flex;
   flex-wrap: wrap;
   max-width: 145px;
-}
-
-.header-icon,
-.footer-social-icon,
-.footer-logo {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
 }
