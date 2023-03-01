@@ -423,8 +423,7 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 20px;
-  column-gap: 16px;
-  row-gap: 20px;
+  gap: 16px 20px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
 }
@@ -436,7 +435,6 @@ img {
 
 .lead-hotel {
   grid-column: 1 / -1;
-  width: min-content;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -444,7 +442,6 @@ img {
 }
 
 .hotel-description {
-  width: min-content;
   font-size: 18px;
   line-height: 21px;
   margin: 0;
@@ -466,6 +463,19 @@ img {
   text-transform: uppercase;
   padding-top: 9px;
   margin: 0;
+}
+
+.hotel-stars {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.star {
+  background-image: url("../images/catalog/star.svg");
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 17px;
 }
 
 .horizontal-line {
