@@ -210,8 +210,10 @@ img {
   padding: 8px 34px;
 }
 
-.button-search {
+.button-page {
   padding: 8px 50px;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .button-blue {
@@ -333,21 +335,36 @@ img {
 }
 
 .button-submit {
-  padding: 8px 50px;
-  font-size: 20px;
-  line-height: 36px;
   border-radius: 0 4px 4px 0;
 }
 
 .breadcrumbs-list {
   display: flex;
-  gap: 28px;
 }
 
 .breadcrumbs-link {
   display: block;
-  min-width: 13px;
-  min-height: 15px;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.breadcrumbs-link-main {
+  position: relative;
+  width: 13px;
+  height: 15px;
+  padding: 8px;
+  margin: -5px 20px -5px -8px;
+}
+
+.breadcrumbs-link-main::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 5px;
+  bottom: 5px;
+  width: 8px;
+  background-image: url("../images/catalog/arrow-right.svg");
+  background-repeat: no-repeat;
 }
 
 .catalog-container {
@@ -376,6 +393,16 @@ img {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.catalog-filter-item {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .catalog-filter-price {
@@ -387,6 +414,10 @@ img {
   flex-direction: column;
   justify-content: space-between;
   margin-top: 56px;
+}
+
+.button-filter {
+  padding: 8px 50px;
 }
 
 .catalog {
@@ -571,6 +602,8 @@ img {
 
 .footer-logo-link {
   width: 115px;
+  padding: 10px;
+  margin: -10px;
 }
 
 .footer-phone-link {
