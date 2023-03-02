@@ -592,6 +592,20 @@ img {
   background-position: center;
   background-size: 16px 14px;
 }
+
+.select-view:hover {
+  border-color: #000000;
+}
+
+.select-view:focus {
+  border-color: #68a2ca;
+  outline: none;
+}
+
+.select-view:active {
+  border-color: #000000;
+}
+
 .hotel-list {
   position: relative;
   display: grid;
@@ -690,6 +704,20 @@ img {
   text-decoration: none;
 }
 
+.pagination-link:hover {
+  background-color: #68a2ca;
+}
+
+.pagination-link:focus {
+  background-color: #68a2ca;
+  outline: none;
+}
+
+.pagination-link:active {
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .pagination-empty {
   display: block;
   width: 60px;
@@ -697,9 +725,13 @@ img {
   text-align: center;
 }
 
-.pagination-current {
+.pagination-current,
+.pagination-current:hover,
+.pagination-current:focus,
+.pagination-current:active {
   color: #000000;
   background-color: #f2f2f2;
+  outline: none;
 }
 
 .search {
