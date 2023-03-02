@@ -113,6 +113,20 @@ img {
   z-index: 1;
 }
 
+.navigation-link-search {
+  background-image: url(../images/header/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+}
+
+.navigation-link-heart {
+  background-image: url(../images/header/heart.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+}
+
 .icon {
   position: absolute;
   top: 0;
@@ -284,8 +298,6 @@ img {
 }
 
 .advantages-item-container {
-  position: relative;
-  display: block;
   padding: 0 85px;
   align-self: center;
 }
@@ -309,11 +321,25 @@ img {
   margin-bottom: 30px;
 }
 
-.service-icon {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 162.5px;
+.advantages-item-house {
+  background-image: url(../images/index/advantage-icon-house.svg);
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: 77px 72px;
+}
+
+.advantages-item-food {
+  background-image: url(../images/index/advantage-icon-food.svg);
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: 76px 72px;
+}
+
+.advantages-item-gift {
+  background-image: url(../images/index/advantage-icon-gift.svg);
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: 76px 76px;
 }
 
 .subscribe-form {
@@ -447,8 +473,6 @@ img {
 }
 
 .select-view {
-  position: relative;
-  display: block;
   box-sizing: border-box;
   width: 48px;
   height: 48px;
@@ -462,6 +486,26 @@ img {
   border-color: #000000;
 }
 
+.select-view-1 {
+  background-image: url(../images/catalog/view-icon-1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 14px;
+}
+
+.select-view-2 {
+  background-image: url(../images/catalog/view-icon-2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 14px;
+}
+
+.select-view-3 {
+  background-image: url(../images/catalog/view-icon-3.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 14px;
+}
 .hotel-list {
   position: relative;
   display: grid;
