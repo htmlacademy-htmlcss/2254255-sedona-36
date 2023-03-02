@@ -488,6 +488,14 @@ img {
   padding: 35px 70px 70px;
 }
 
+.catalog-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
