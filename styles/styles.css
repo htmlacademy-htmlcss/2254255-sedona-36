@@ -468,12 +468,16 @@ img {
   background-size: 13px 15px;
 }
 
-.breadcrumbs-link-main::after {
+.breadcrumbs-item-main {
+  position: relative;
+}
+
+.breadcrumbs-item-main::after {
   content: "";
   position: absolute;
-  right: -10px;
-  top: 5px;
-  bottom: 5px;
+  right: 10px;
+  top: 0;
+  bottom: 0;
   width: 8px;
   background-image: url("../images/catalog/arrow-right.svg");
   background-repeat: no-repeat;
