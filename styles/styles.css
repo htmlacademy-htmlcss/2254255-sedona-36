@@ -132,6 +132,10 @@ img {
   min-height: 64px;
 }
 
+.navigation-logo:focus {
+  outline: 3px solid #83b3d3;
+}
+
 .logo-image {
   position: relative;
   margin-bottom: -12px;
@@ -458,10 +462,19 @@ img {
   height: 15px;
   padding: 8px;
   margin: -5px 20px -5px -8px;
-  background-image: url(../images/catalog/home.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 13px 15px;
+  fill: #ffffff;
+}
+
+.breadcrumbs-link-main:hover {
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link-main:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.breadcrumbs-link-main:active {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .breadcrumbs-item-main {
