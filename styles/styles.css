@@ -101,6 +101,22 @@ img {
   text-decoration: none;
 }
 
+.navigation-link:hover {
+  color: #756157;
+  fill: #756157;
+}
+
+.navigation-link:focus {
+  color: #756157;
+  fill: #756157;
+  outline: none;
+}
+
+.navigation-link:active {
+  color: rgba(117, 97, 87, 0.3);
+  fill: rgba(117, 97, 87, 0.3);
+}
+
 .navigation-link-current::after {
   content: "";
   position: absolute;
@@ -120,20 +136,6 @@ img {
   position: relative;
   margin-bottom: -12px;
   z-index: 1;
-}
-
-.navigation-link-search {
-  background-image: url(../images/header/search.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px 20px;
-}
-
-.navigation-link-heart {
-  background-image: url(../images/header/heart.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px 20px;
 }
 
 .icon {
@@ -256,10 +258,6 @@ img {
   background-color: #756157;
 }
 
-.button-brown:disabled {
-  background-color: #e5e5e5;
-}
-
 .button-blue {
   color: #ffffff;
   background-color: #82b3d3;
@@ -277,10 +275,6 @@ img {
 .button-blue:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #82b3d3;
-}
-
-.button-blue:disabled {
-  background-color: #e5e5e5;
 }
 
 .button-checked {
@@ -302,7 +296,8 @@ img {
   background-color: #7db54f;
 }
 
-.button-checked:disabled {
+.button:disabled,
+.button:disabled:hover {
   background-color: #e5e5e5;
 }
 
@@ -323,7 +318,8 @@ img {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button-transparent:disabled {
+.button-transparent:disabled,
+.button-transparent:disabled:hover {
   color: rgba(255, 255, 255, 0.1);
 }
 
