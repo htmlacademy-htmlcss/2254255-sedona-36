@@ -744,14 +744,6 @@ img {
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
 }
 
-/* .select-control {
-  font-size: 18px;
-  line-height: 21px;
-  margin: 0 70px 0 auto;
-  padding-left: 20px;
-  width: 292px;
-} */
-
 .select-container {
   position: relative;
   display: flex;
@@ -1115,12 +1107,20 @@ img {
 .modal-form {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .modal-group {
   position: relative;
+  display: flex;
   margin: 0;
   margin-bottom: 48px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-group-wide {
+  width: 577px;
 }
 
 .modal-label {
@@ -1129,11 +1129,59 @@ img {
   line-height: 24px;
 }
 
+.modal-form-field {
+  position: relative;
+  box-sizing: border-box;
+  border: none;
+  background: #f2f2f2;
+  border-radius: 4px;
+}
+
+.modal-form-field-wide {
+  width: 440px;
+  height: 48px;
+  padding: 12px 48px 12px 20px;
+  border-radius: 4px;
+}
+
+.modal-group-wide::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/modal/date.svg");
+  background-repeat: no-repeat;
+}
+
+.modal-form-field-narrow {
+  width: 110px;
+  height: 48px;
+  padding: 14px 40px;
+  margin-left: 46px;
+}
+
+.modal-form-field-narrow::-webkit-outer-spin-button,
+.modal-form-field-narrow::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.modal-form-field-narrow[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .modal-form-field::placeholder {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+}
+
+.modal-form-field-narrow::placeholder {
+  line-height: 20px;
+  text-align: center;
 }
 
 .modal-hint {
@@ -1147,6 +1195,32 @@ img {
 
 .modal-hint-false {
   color: #ff5757;
+}
+
+.modal-minus {
+  position: absolute;
+  top: 14px;
+  right: 80px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url("../images/modal/minus.svg");
+  background-repeat: no-repeat;
+  border: none;
+  padding: 0;
+}
+
+.modal-plus {
+  position: absolute;
+  top: 14px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url("../images/modal/plus.svg");
+  background-repeat: no-repeat;
+  border: none;
+  padding: 0;
 }
 
 .button-model {
