@@ -203,8 +203,34 @@
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
         </button>
+
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="modal-group">
+              <label class="modal-label" for="modal-date-in">Дата Заезда:</label>
+              <input class="modal-form-field modal-form-field-wide" type="text" id="modal-date-in" name="modal-date-in" placeholder="27 апреля 2020">
+              <span class="modal-hint modal-hint-false">Мы не можем отправить вас в прошлое.</span>
+            </p>
+            <p class="modal-group">
+              <label class="modal-label" for="modal-date-out">Дата Выезда:</label>
+              <input class="modal-form-field modal-form-field-wide" type="text" id="modal-date-out" name="modal-date-out" placeholder="1 сентября 2023">
+              <span class="modal-hint modal-hint-true">На эти даты есть свободные номера. Пока есть.</span>
+            </p>
+            <p class="modal-group">
+              <label class="modal-label" for="modal-adults">Взрослые:</label>
+              <button class="modal-minus" type="button"></button>
+              <input class="modal-form-field modal-form-field-narrow" type="number" id="modal-adults" name="modal-adults" placeholder="2">
+              <button class="modal-plus" type="button"></button>
+            </p>
+            <p class="modal-group">
+              <label class="modal-label" for="modal-children">Взрослые:</label>
+              <button class="modal-minus" type="button"></button>
+              <input class="modal-form-field modal-form-field-narrow" type="number" id="modal-children" name="modal-children" placeholder="2">
+              <button class="modal-plus" type="button"></button>
+            </p>
+            <button class="button button-blue button-model" type="button">Найти</button>
+          </form>
         </section>
       </div>
     </div>

@@ -1111,3 +1111,47 @@ img {
   margin: 0;
   margin-bottom: 64px;
 }
+
+.modal-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal-group {
+  position: relative;
+  margin: 0;
+  margin-bottom: 48px;
+}
+
+.modal-label {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.modal-form-field::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.modal-hint {
+  position: absolute;
+  bottom: -25px;
+  left: 157px;
+  width: max-content;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.modal-hint-false {
+  color: #ff5757;
+}
+
+.button-model {
+  width: 577px;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 18px 0;
+}
