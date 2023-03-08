@@ -567,6 +567,99 @@ img {
   margin: auto 0;
 }
 
+.range-wrapper-inputs {
+  display: flex;
+  width: 288px;
+  gap: 2px;
+}
+
+.catalog-filter-label {
+  position: relative;
+}
+
+.range-input {
+  width: 143px;
+  min-height: 48px;
+  border: none;
+  padding: 12px 43px 12px 20px;
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.min-price {
+  border-radius: 4px 0 0 4px;
+}
+
+.max-price {
+  border-radius: 0 4px 4px 0;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-input-text {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.range-scale {
+  position: relative;
+  top: 48px;
+  height: 4px;
+  width: 288px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -20px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -20px;
+}
+
+.range-toggle:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:focus {
+  border: 3px solid #83b3d3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  outline: none;
+}
+
+.range-toggle:active {
+  border: 2px solid #83b3d3;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+}
+
 .select-control {
   font-size: 18px;
   line-height: 21px;
@@ -574,6 +667,7 @@ img {
   padding-left: 20px;
   width: 292px;
 }
+
 .select-container {
   display: flex;
   gap: 8px;
