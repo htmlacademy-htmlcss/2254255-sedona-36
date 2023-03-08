@@ -300,8 +300,7 @@ img {
   background-color: #7db54f;
 }
 
-.button:disabled,
-.button:disabled:hover {
+.button:disabled {
   background-color: #e5e5e5;
 }
 
@@ -322,8 +321,7 @@ img {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button-transparent:disabled,
-.button-transparent:disabled:hover {
+.button-transparent:disabled {
   color: rgba(255, 255, 255, 0.1);
 }
 
@@ -598,9 +596,30 @@ img {
   outline: none;
 }
 
-.control-input:disabled,
-.control-input:disabled:hover {
+.control:has(.control-input:disabled) {
   opacity: 0.3;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  width: 13px;
+  height: 11px;
+  background-image: url("../images/catalog/mark.svg");
+  background-repeat: no-repeat;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3f5e72;
+  border-radius: 50%;
 }
 
 .range-wrapper-inputs {
@@ -622,6 +641,7 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  appearance: none;
 }
 
 .range-input::placeholder {
@@ -724,15 +744,53 @@ img {
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
 }
 
-.select-control {
+/* .select-control {
   font-size: 18px;
   line-height: 21px;
   margin: 0 70px 0 auto;
   padding-left: 20px;
   width: 292px;
-}
+} */
 
 .select-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 292px;
+  height: 48px;
+  margin: 0 70px 0 auto;
+}
+
+.select-control {
+  width: 100%;
+  padding: 14px 40px 14px 20px;
+  font-size: 18px;
+  line-height: 21px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  background-image: url("../images/catalog/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  appearance: none;
+}
+
+.select-control:hover,
+.select-control:focus {
+  border: 2px solid #68A2CA;
+  outline: none;
+}
+
+.select-control:not(:placeholder-shown):focus {
+  border: 2px solid #3F5E72;
+}
+
+.select-control:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.view-container {
   display: flex;
   gap: 8px;
 }
