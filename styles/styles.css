@@ -567,6 +567,42 @@ img {
   margin: auto 0;
 }
 
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+
+.control-mark-radio {
+  border-radius: 50%;
+}
+
+.control:hover {
+  opacity: 0.6;
+}
+
+.control:focus .control-mark {
+  border: 3px solid #83b3d3;
+  margin: -3px;
+  z-index: 1;
+  outline: none;
+}
+
+.control-input:disabled,
+.control-input:disabled:hover {
+  opacity: 0.3;
+}
+
 .range-wrapper-inputs {
   display: flex;
   width: 288px;
@@ -578,14 +614,37 @@ img {
 }
 
 .range-input {
-  width: 143px;
-  min-height: 48px;
+  position: relative;
+  width: 80px;
+  height: 24px;
   border: none;
   padding: 12px 43px 12px 20px;
-  box-sizing: border-box;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+}
+
+.range-input::placeholder {
+  color: #000000;
+}
+
+.range-input:hover {
+  background-color: #e6e6e6;
+}
+
+.range-input:focus {
+  background: #e6e6e6;
+  border: 3px solid #83b3d3;
+  margin: -3px;
+  z-index: 1;
+  outline: none;
+}
+
+.range-input:not(:placeholder-shown):focus {
+  background: #f2f2f2;
+  border: 2px solid #000000;
+  margin: -2px;
+  z-index: 1;
 }
 
 .min-price {
@@ -602,6 +661,10 @@ img {
   margin: 0;
 }
 
+.range-input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .range-input-text {
   position: absolute;
   top: 12px;
@@ -609,6 +672,7 @@ img {
   color: rgba(0, 0, 0, 0.3);
   font-size: 18px;
   line-height: 24px;
+  background-color: inherit;
 }
 
 .range-scale {
