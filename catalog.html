@@ -13,7 +13,7 @@
       <header class="page-header" data-test="header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html">
-            <img class="logo-image" src="images/header/logo.svg" width="140" height="70" alt="Логотип город Седона.">
+            <img class="logo-image" src="images/logo.svg" width="140" height="70" alt="Логотип город Седона.">
           </a>
           <ul class="nobullet navigation-list">
             <li class="navigation-item">
@@ -29,13 +29,19 @@
 
           <ul class="nobullet navigation-list navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link navigation-user-link navigation-link-search" href="#">
+              <a class="navigation-link navigation-user-link" href="#">
                 <span class="visually-hidden">Поиск</span>
+                <svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                  <path d="m19.5 18-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87a8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z"/>
+                </svg>
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-user-link navigation-link-heart" href="#">
+              <a class="navigation-link navigation-user-link" href="#">
                 <span class="visually-hidden">Избранное</span>
+                <svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                  <path d="M9.9 19a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
+                </svg>
                 <span class="likes-count">12</span>
               </a>
             </li>
@@ -51,9 +57,13 @@
           <header class="catalog-header">
             <h1 class="catalog-title">Гостиницы Седоны</h1>
             <ul class="nobullet breadcrumbs-list">
-              <li class="breadcrumbs-item">
+              <li class="breadcrumbs-item breadcrumbs-item-main">
                 <a class="breadcrumbs-link breadcrumbs-link-main" href="index.html">
                   <span class="visually-hidden">Главная</span>
+                  <svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="13" height="15" viewBox="0 0 13 15">
+                    <path d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z"/>
+                    <path d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z"/>
+                  </svg>
                 </a>
               </li>
               <li class="breadcrumbs-item">
@@ -70,17 +80,23 @@
                 <ul class="nobullet catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="swimming-pool" checked>Бассейн
+                      <input class="visually-hidden control-input" type="checkbox" name="infrastructure-group" value="swimming-pool" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="parking" checked>Парковка
+                      <input class="visually-hidden control-input" type="checkbox" name="infrastructure-group" value="parking" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="wi-fi">Wi-Fi
+                      <input class="visually-hidden control-input" type="checkbox" name="infrastructure-group" value="wi-fi">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -91,17 +107,23 @@
                 <ul class="nobullet catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="hotel" checked>Гостиница
+                      <input class="visually-hidden control-input" type="radio" name="product-group" value="hotel" checked>
+                      <span class="control-mark control-mark-radio"></span>
+                      <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="motel">Мотель
+                      <input class="visually-hidden control-input" type="radio" name="product-group" value="motel">
+                      <span class="control-mark control-mark-radio"></span>
+                      <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="apartments">Апартаменты
+                      <input class="visually-hidden control-input" type="radio" name="product-group" value="apartments">
+                      <span class="control-mark control-mark-radio"></span>
+                      <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
@@ -109,6 +131,30 @@
 
               <fieldset class="catalog-filter-group catalog-filter-price">
                 <legend class="catalog-filter-title">Стоимость, &#8381:</legend>
+
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">
+                    <input class="range-input min-price" type="number" placeholder="0" name="min-price">
+                    <span class="range-input-text">от</span>
+                  </label>
+                  <label class="catalog-filter-label">
+                    <input class="range-input max-price" type="number" placeholder="9000" name="max-price">
+                    <span class="range-input-text">до</span>
+                  </label>
+                </div>
+
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 20px; width: 188px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </fieldset>
 
               <div class="catalog-filter-buttons">
@@ -127,13 +173,15 @@
               <span class="hotel-number">38</span>
             </p>
 
-            <select class="select-control" aria-label="Сортировка">
-              <option value="cheap">Сначала дешевые</option>
-              <option value="expensive">Сначала дорогие</option>
-              <option value="rating">По рейтингу</option>
-            </select>
-
             <div class="select-container">
+              <select class="select-control" aria-label="Сортировка">
+                <option value="cheap" selected>Сначала дешевые</option>
+                <option value="expensive">Сначала дорогие</option>
+                <option value="rating">По рейтингу</option>
+              </select>
+            </div>
+
+            <div class="view-container">
               <a class="select-view select-view-checked select-view-1" href="#">
                 <span class="visually-hidden">Показать плиткой</span>
               </a>
