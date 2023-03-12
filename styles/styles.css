@@ -20,6 +20,7 @@ html {
 
 body {
   margin: 0;
+  min-width: 1280px;
   height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 22px;
