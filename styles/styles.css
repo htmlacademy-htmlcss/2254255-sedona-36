@@ -1002,7 +1002,7 @@ img {
 .footer-link {
   position: relative;
   display: block;
-  height: 50px;
+  min-height: 50px;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
