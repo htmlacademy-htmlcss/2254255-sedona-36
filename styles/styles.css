@@ -77,7 +77,7 @@ img {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  width: 440px;
+  max-width: 440px;
   margin: 0;
   padding: 0;
   margin-left: 30px;
@@ -195,7 +195,7 @@ img {
 }
 
 .advantages-container {
-  margin: 69px 0 90px;
+  margin: 69px 70px 90px;
 }
 
 .lead {
@@ -394,7 +394,7 @@ img {
 }
 
 .service-container {
-  margin: 64px 0;
+  margin: 64px 70px;
 }
 
 .advantages-title-service {
@@ -785,6 +785,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  max-width: 176px;
 }
 
 .select-view {
@@ -967,12 +968,12 @@ img {
 }
 
 .search {
-  margin: 96px 0;
+  margin: 96px 70px;
   text-align: center;
 }
 
 .subscribe {
-  padding: 96px 0 104px;
+  padding: 96px 70px 104px;
   text-align: center;
 }
 
@@ -994,7 +995,7 @@ img {
 .footer-list {
   display: flex;
   flex-wrap: wrap;
-  max-width: 145px;
+  max-width: 288px;
 }
 
 .footer-link {
@@ -1028,7 +1029,8 @@ img {
 
 .footer-phone-link {
   box-sizing: border-box;
-  width: 350px;
+  min-width: 350px;
+  max-width: 450px;
   padding: 5px 0;
 }
 
