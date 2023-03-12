@@ -565,7 +565,7 @@ img {
 .lead-catalog {
   text-align: left;
   margin: auto 0;
-  max-width: 470px;
+  max-width: 400px;
 }
 
 .control {
@@ -784,8 +784,9 @@ img {
 .view-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   gap: 8px;
-  max-width: 176px;
+  max-width: 216px;
 }
 
 .select-view {
