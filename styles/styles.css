@@ -387,6 +387,8 @@ img {
 .advantages-item-container {
   padding: 60px 85px;
   align-self: center;
+  box-sizing: border-box;
+  min-width: 400px;
 }
 
 .advantages-image-bridge {
@@ -543,6 +545,7 @@ img {
   line-height: 24px;
   font-weight: 700;
   margin-bottom: 32px;
+  padding: 0;
 }
 
 .catalog-filter-item {
@@ -565,6 +568,7 @@ img {
   flex-direction: column;
   justify-content: space-between;
   margin-top: 56px;
+  min-height: 104px;
 }
 
 .catalog {
@@ -715,7 +719,7 @@ img {
 
 .range-scale {
   position: relative;
-  top: 48px;
+  top: 44px;
   height: 4px;
   width: 288px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -773,7 +777,10 @@ img {
 
 .select-control {
   width: 100%;
-  padding: 14px 40px 14px 20px;
+  height: 100%;
+  padding: 12px 40px 12px 18px;
+  box-sizing: border-box;
+  font-family: inherit;
   font-size: 18px;
   line-height: 21px;
   border: 2px solid #e5e5e5;
@@ -781,7 +788,7 @@ img {
   background-image: url("../images/catalog/arrow-down.svg");
   background-color: #ffffff;
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  background-position: right 18px center;
   appearance: none;
 }
 
@@ -874,7 +881,7 @@ img {
 .hotel-card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 20px;
+  padding: 19px;
   gap: 16px 20px;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
@@ -1185,6 +1192,7 @@ img {
 
 .modal-form-field {
   position: relative;
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   box-sizing: border-box;
