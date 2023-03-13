@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -349,7 +349,7 @@ img {
   bottom: -30px;
   left: 60px;
   width: 60px;
-  border-bottom: 2px solid currentColor;
+  border-bottom: 2px solid currentcolor;
   opacity: 0.3;
 }
 
@@ -404,21 +404,21 @@ img {
 }
 
 .advantages-item-house {
-  background-image: url(../images/index/advantage-icon-house.svg);
+  background-image: url("../images/index/advantage-icon-house.svg");
   background-repeat: no-repeat;
   background-position: center 60px;
   background-size: 77px 72px;
 }
 
 .advantages-item-food {
-  background-image: url(../images/index/advantage-icon-food.svg);
+  background-image: url("../images/index/advantage-icon-food.svg");
   background-repeat: no-repeat;
   background-position: center 60px;
   background-size: 76px 72px;
 }
 
 .advantages-item-gift {
-  background-image: url(../images/index/advantage-icon-gift.svg);
+  background-image: url("../images/index/advantage-icon-gift.svg");
   background-repeat: no-repeat;
   background-position: center 60px;
   background-size: 76px 76px;
@@ -691,7 +691,7 @@ img {
 }
 
 .range-input[type="number"] {
-  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .range-input-text {
@@ -767,9 +767,10 @@ img {
   padding: 14px 40px 14px 20px;
   font-size: 18px;
   line-height: 21px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
   background-image: url("../images/catalog/arrow-down.svg");
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: right 20px center;
   appearance: none;
@@ -777,7 +778,7 @@ img {
 
 .select-control:hover,
 .select-control:focus {
-  border: 2px solid #68A2CA;
+  border: 2px solid #68a2ca;
   outline: none;
 }
 
@@ -810,21 +811,21 @@ img {
 }
 
 .select-view-1 {
-  background-image: url(../images/catalog/view-icon-1.svg);
+  background-image: url("../images/catalog/view-icon-1.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px 14px;
 }
 
 .select-view-2 {
-  background-image: url(../images/catalog/view-icon-2.svg);
+  background-image: url("../images/catalog/view-icon-2.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px 14px;
 }
 
 .select-view-3 {
-  background-image: url(../images/catalog/view-icon-3.svg);
+  background-image: url("../images/catalog/view-icon-3.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px 14px;
@@ -1130,7 +1131,7 @@ img {
 
 .modal-close-button:focus {
   background-color: #e6e6e6;
-  border: 3px solid #83B3D3;
+  border: 3px solid #83b3d3;
   outline: none;
 }
 
@@ -1219,7 +1220,7 @@ img {
 }
 
 .modal-form-field-narrow[type="number"] {
-  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .modal-form-field::placeholder {
@@ -1314,7 +1315,7 @@ img {
 }
 
 .modal-button:focus {
-  border: 3px solid #82B3D3;
+  border: 3px solid #82b3d3;
   margin: -3px;
   border-radius: 4px;
   outline: none;
@@ -1360,7 +1361,7 @@ img {
   margin: 0;
   box-sizing: content-box;
   display: block;
-  background-image: url(../images/modal/info.svg);
+  background-image: url("../images/modal/info.svg");
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
