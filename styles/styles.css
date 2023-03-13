@@ -81,7 +81,6 @@ img {
   max-width: 440px;
   margin: 0;
   padding: 0;
-  margin-left: 30px;
 }
 
 .navigation-user {
@@ -134,13 +133,19 @@ img {
   min-height: 64px;
 }
 
+.navigation-logo {
+  width: 140px;
+  height: 70px;
+  margin-bottom: -6px;
+  margin-right: 28px;
+}
+
 .navigation-logo:focus {
   outline: 3px solid #83b3d3;
 }
 
 .logo-image {
   position: relative;
-  margin-bottom: -12px;
   z-index: 1;
 }
 
@@ -382,6 +387,10 @@ img {
 .advantages-item-container {
   padding: 60px 85px;
   align-self: center;
+}
+
+.advantages-image-bridge {
+  order: -1;
 }
 
 .advantages-item-medium {
