@@ -176,7 +176,7 @@ img {
 .hero {
   position: relative;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #6c879e;
   background-image: url("../images/index/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -246,6 +246,7 @@ img {
 }
 
 .button-page {
+  display: inline-block;
   font-size: 20px;
   line-height: 36px;
   width: 376px;
@@ -331,6 +332,7 @@ img {
 
 .button-transparent:disabled {
   color: rgba(255, 255, 255, 0.1);
+  background-color: transparent;
 }
 
 .advantages-title {
@@ -512,7 +514,7 @@ img {
 
 .catalog-container {
   color: #ffffff;
-  background-color: #000000;
+  background-color: #4b5f74;
   background-image: url("../images/catalog/filter.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -611,7 +613,7 @@ img {
   opacity: 0.6;
 }
 
-.control:focus .control-mark {
+.control-input:focus + .control-mark {
   border: 3px solid #83b3d3;
   margin: -3px;
   z-index: 1;
@@ -1015,7 +1017,7 @@ img {
 
 .subscribe-index {
   color: #ffffff;
-  background-color: #000000;
+  background-color: #496c81;
   background-image: url("../images/index/subscribe.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
