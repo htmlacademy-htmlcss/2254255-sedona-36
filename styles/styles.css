@@ -1035,7 +1035,7 @@ img {
 .footer-list {
   display: flex;
   flex-wrap: wrap;
-  max-width: 288px;
+  width: 144px;
 }
 
 .footer-link {
